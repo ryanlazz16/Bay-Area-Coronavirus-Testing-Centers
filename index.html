@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <title>Map of Coronavirus Testing Centers in the Bay Area</title>
+
+  <!-- AIzaSyCWmm4-bydAtJ3pcZO7J1m9fwZxUzNbXec -->
+
+</head>
+<body>
+
+  <div id="title" class="container-fluid text-center">
+    <h1>Coronavirus Testing Centers in the Bay Area</h1>
+    <h4>Find your nearest test center today</h4>
+  </div>
+
+  <div class="top-container">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+
+        <div class="px-4 pt-3 col-xl-6 col-12">
+
+          <h3>A letter to our supporters</h3>
+          <p id="letter">In light of the recent pandemic, there has been a lot of chaos and discomfort surrounding COVID-19 and its implications. We wanted to make finding the appropriate help easier for everyone as we pass through these rough times, and hopefully connect people with the right resources that they need to continue their well being. This is why we constructed a website that efficiently maps out all testing locations with specific information about the services they provide in the San Francisco Bay Area.</p>
+          <p class="signature">Ryan Lazzareschi<br />Palavi Lodhia<br />Vidit Vinish</p>
+
+
+
+          <h3 id="news" class="border p-3">
+            <b>Latest News:</b> <br />
+            San Francisco Announces Three New Mobile Coronavirus Testing Sites for the Public
+          </h3>
+
+        </div>
+
+        <div id="map" class="col-xl-6 col-12 border">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="middle-container">
+    <div class="container">
+      <div class="row d-flex justify-content-left">
+        <div id="left-col" class="col-xl-6 col-12">
+
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Common COVID-19 Symptoms
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p class="my-1 p-0 px-1">
+                    All symptoms will onset gradually:
+                  </p>
+                  <ul class="list-group mb-3 ">
+                    <li class="list-group-item symptom p-0 px-3">Fever of 100.4℉ or above</li>
+                    <li class="list-group-item symptom p-0 px-3">Dry cough</li>
+                    <li class="list-group-item symptom p-0 px-3">Tirednesss or fatigue</li>
+                    <li class="list-group-item symptom p-0 px-3">Difficulty breathing</li>
+                  </ul>
+
+                  <p class="my-1 p-0 px-1">
+                    Less common symptoms include:
+                  </p>
+                  <ul class="list-group mb-3">
+                    <li class="list-group-item symptom p-0 px-3">Body aches and pains</li>
+                    <li class="list-group-item symptom p-0 px-3">Headaches</li>
+                    <li class="list-group-item symptom p-0 px-3">Sore throat</li>
+                    <li class="list-group-item symptom p-0 px-3">Nausea/Diarrhea</li>
+                  </ul>
+
+                  <p class="my-1 p-0 px-1">
+                    Seek medical attention immediately if you have:
+                  </p>
+                  <ul class="list-group">
+                    <li class="list-group-item symptom p-0 px-3">Trouble breathing</li>
+                    <li class="list-group-item symptom p-0 px-3">Persistent pain or pressure in the chest</li>
+                    <li class="list-group-item symptom p-0 px-3">New confusion or inability to arouse</li>
+                    <li class="list-group-item symptom p-0 px-3">Blush lips or face</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2">
+            <h3>Hayward Fire Station No. 7</h3>
+            <p>
+              This fire station converted to a testing center provides free drive-thru COVID-19 testing for the Bay Area. You must have a consistent fever of 100.4℉ as well as other common COVID symptoms* in order to be tested. No insurance or physician's referral is required. Appointments can be made by calling 510-583-4949,  but drive-ins are also welcome. Results are speedy and can be delivered in as little as 6 hours, but may take up to 24 hours.
+            </p>
+          </div>
+
+          <div class="p-2">
+            <h3>Carbon Health</h3>
+            <p>
+              Carbon Health is a chain that provides in-person COVID-19 testing at all of its urgent care clinics. Any California resident can get tested, but everyone is strongly encouraged to obtain a free virtual screening using the Coronavirus Assessment Tool to ensure that requirements for free testing are met. Which lab the sample gets sent to depends on the insurance provider, but by California law, insurance companies have to cover the cost of screening and testing; details may vary by company. Hours for testing may vary. Expect 3-6 days for results.
+            </p>
+          </div>
+
+          <div class="p-2">
+            <h3>Sutter Health</h3>
+            <p>
+              Sutter Health offers testing service only to patients that are expressing symptoms and have been referred by a Sutter-affiliated clinician. A video visit can be scheduled, or one can call the COVID-19 advice line to decide if an on-site evaluation is needed. Patients must show identification on-site. Sutter does not charge for testing in advance.
+            </p>
+          </div>
+        </div>
+
+        <div id="right-col" class="col-xl-6 col-12">
+          <div class="p-2">
+            <h3>Stanford Medical Center</h3>
+            <p>
+              The Medical Center located in Palo Alto provides drive-thru COVID-19 testing based on the referral of a physician and signs of probable COVID symptoms*. Appointments are contingent upon a deemed high-risk and physician clearance. The test is free as per California law and is eventually sent to Stanford Medicine for testing. Results are given within 24 hours, but due to the recent surge of patients they may take up to 36-48 hours.
+            </p>
+            <p>
+              Note: Priority for testing is given to health workers and cases involving high-risk patients
+            </p>
+          </div>
+
+          <div class="p-2">
+            <h3>John Muir</h3>
+            <p>
+              John Muir only provides screening for high-risk patients (as outlined by the CDC) that have first gotten a doctor's referral. Most referrals are made through a phone evaluation, as all walk-in and online appointment scheduling has been shut down. One should call their primary physician first, but for after hours and weekends, urgent care accepts calls as well. John Muir accepts emergency patients, but they will be screened upon entering the Emergency Room and testing will only be provided if the high-risk criteria is met. John Muir does not bill patients for COVID-19 screening and testing.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="./d3.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWmm4-bydAtJ3pcZO7J1m9fwZxUzNbXec&callback=initMap"
+    type="text/javascript"></script>
+  <script src="./index.js"></script>
+
+</body>
+</html>
